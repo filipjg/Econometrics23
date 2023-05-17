@@ -1,4 +1,4 @@
-from src.Econometrics import TimeSeriesModels
+from src.econometrics import TimeSeriesModels
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -23,7 +23,7 @@ def main():
     
     # Arima model
     # Orders set to what's been generated from our statistical analysis
-    arimaForecast, arimaRmse = myTimeSeriesModel.linearModel(xTrain, xTest, p=5, d=1, q=10)
+    arimaForecast, arimaRmse = myTimeSeriesModel.linearModel(xTrain, xTest, p=2, d=0, q=2)
     
     # GARCH
     garchForecast, garchVolatility = myTimeSeriesModel.GARCH(xTrain, xTest, p=2, q=2)
