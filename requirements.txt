@@ -1,0 +1,11 @@
+numpy
+pandas
+arch
+matplotlib
+scipy
+statsmodels
+notebook
+seaborn
+ipykernel
+fitter
+scikit-learn
