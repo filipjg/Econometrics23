@@ -56,7 +56,7 @@ def main():
     plt.figure()
     plt.plot(datesInputData[myTimeSeriesModel.numberTrainData:], arimaForecast, label='Forecast')
     plt.plot(datesInputData[myTimeSeriesModel.numberTrainData:], xTest, label='Test data')
-    plt.set_title("Forecast - ARIMA")
+    plt.title("Forecast - ARIMA")
     plt.grid()
     plt.legend()
     plt.tight_layout()
@@ -84,7 +84,6 @@ def main():
     plt.plot(datesInputData[myTimeSeriesModel.numberTrainData:], xTest, label='Test data')
     plt.plot(datesInputData[myTimeSeriesModel.numberTrainData:], arimaGarchForecastTDist, label='Forecast, t-distribution')
     plt.plot(datesInputData[myTimeSeriesModel.numberTrainData:], arimaGarchForecastNormDist, label='Forecast, normal distribution',)
-    plt.grid()
     plt.legend()
     plt.tight_layout()
 
